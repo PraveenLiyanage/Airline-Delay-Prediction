@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Flight Delay Prediction</title>
+</head>
+<body>
+    <div class="container" id="form-container">
+        <h1 id="form-title">Flight Delay Prediction</h1>
+        <form action="/predict" method="post" id="prediction-form">
+            <label for="year" class="form-label">Year:</label>
+            <input type="text" name="Year" id="year-input" required><br>
+            
+            <label for="month" class="form-label">Month:</label>
+            <input type="text" name="Month" id="month-input" required><br>
+            
+            <label for="taxiOut" class="form-label">TaxiOut:</label>
+            <input type="text" name="TaxiOut" id="taxiOut-input" required><br>
+            
+            <label for="arrTime" class="form-label">ArrTime:</label>
+            <input type="text" name="ArrTime" id="arrTime-input" required><br>
+            
+            <label for="distance" class="form-label">Distance:</label>
+            <input type="text" name="Distance" id="distance-input" required><br>
+            
+            <input type="submit" value="Predict" id="predict-button">
+        </form>
+    </div>
+</body>
+</html>

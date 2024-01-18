@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Flight Delay Display</title>
+</head>
+<body>
+    <div class="container" id="result-container">
+        <h1 id="result-title">Flight Delay Prediction Result</h1>
+        <p id="result-text">The flight is {% if prediction %} delayed {% else %} not delayed {% endif %}.</p>
+        <a href="/" id="back-link">Go back to prediction</a>
+    </div>
+</body>
+</html>

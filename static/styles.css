@@ -1,0 +1,61 @@
+/* Add your custom styles here */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    background-image: url('flight.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    color: #333;
+}
+
+.delay-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#delay {
+    color: #e44d26;  /* Custom color for the delay text */
+    font-weight: bold;
+    font-size: 24px;
+}
